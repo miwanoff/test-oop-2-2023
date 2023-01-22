@@ -15,6 +15,12 @@ class MyCat extends Cat
     {
         echo "\nZzzzz...\n";
     }
+
+    public function foo(Cat $obj)
+    {
+        parent::foo($obj);
+        echo $obj->name;
+    }
 }
 
 $my_cat = new MyCat("kitty", 5);
