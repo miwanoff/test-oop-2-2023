@@ -33,6 +33,10 @@ class Cat
 
         return $this;
     }
+
+    function foo(Cat $obj) {
+        echo $obj->age;
+    }
 }
 
 // $cat = new Cat();
